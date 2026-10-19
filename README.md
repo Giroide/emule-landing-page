@@ -47,4 +47,5 @@ No package managers or external runtimes required. Just a modern web browser.
 
 ### Live Demo
 
+[Click here to see the page live](https://giroide.github.io/emule-landing-page/)
 
