@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="aauthor" content="Telmo">
+        <meta name="keywords" content="Emule, P2P, files, file, sharing, eMule">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>eMule</title>
+       
+    </head>
+    
+    <body>
+        <!--dentro de esta etiqueta (body) se incluye todo lo que el usuario va a ver.-->
+        <main class = central1> 
+            <!--esta etiqueta indica que se va a incluir el texto principal del archivo-->
+            <header>
+                <img src="images/eMule_logo.png" alt="logotipo de eMule" class="logo">
+            </header>
+            <div class="wraplangs">
+                <button class = "scroll left" 
+                onmousedown = "ScrollLangs(-10)" 
+                onmouseup= "StopScroll()"
+                onmouseleave= "StopScroll()">⟨</button>
+                    <div class="Langs" id="Langs">
+                        <button type="button" class="en" aria-label="English" onclick="swap_tradus('en')"></button>
+                        <button type="button" class="zh" aria-label="Chinese" onclick="swap_tradus('zh')"></button>
+                        <button type="button" class="es" aria-label="Español" onclick="swap_tradus('es')"></button>
+                        <button type="button" class="fr" aria-label="Français" onclick="swap_tradus('fr')"></button>
+                        <button type="button" class="pt" aria-label="Português" onclick="swap_tradus('pt')"></button>
+                        <button type="button" class="ru" aria-label="Русский" onclick="swap_tradus('ru')"></button>
+                        <button type="button" class="de" aria-label="Deutsch" onclick="swap_tradus('de')"></button>
+                        <button type="button" class="tr" aria-label="Türkçe" onclick="swap_tradus('tr')"></button>
+                        <button type="button" class="it" aria-label="Italiano" onclick="swap_tradus('it')"></button>
+                        <button type="button" class="pl" aria-label="Polski" onclick="swap_tradus('pl')"></button>
+                        <button type="button" class="nl" aria-label="Nederlands" onclick="swap_tradus('nl')"></button>
+                        <button type="button" class="ro" aria-label="Română" onclick="swap_tradus('ro')"></button>
+                        <button type="button" class="el" aria-label="Ελληνικά" onclick="swap_tradus('el')"></button>
+                        <button type="button" class="cs" aria-label="Čeština" onclick="swap_tradus('cs')"></button>
+                        <button type="button" class="ca" aria-label="Català" onclick="swap_tradus('ca')"></button>
+                        <button type="button" class="sv" aria-label="Svenska" onclick="swap_tradus('sv')"></button>
+                        <button type="button" class="he" aria-label="עברית" onclick="swap_tradus('he')"></button>
+                        <button type="button" class="da" aria-label="Dansk" onclick="swap_tradus('da')"></button>
+                        <button type="button" class="fi" aria-label="Suomi" onclick="swap_tradus('fi')"></button>
+                        <button type="button" class="lt" aria-label="Lietuvių" onclick="swap_tradus('lt')"></button>
+                        <button type="button" class="et" aria-label="Eesti" onclick="swap_tradus('et')"></button>
+                    </div>
+                <button class = "scroll right" 
+                onmousedown="ScrollLangs(10)"
+                onmouseup="StopScroll()"
+                onmouseleave="StopScroll()">⟩</button>
+            </div>
+
+            <div class = "bubble1 whatis">
+                <h1 id = "whatis" > What is eMule? </h1>
+                <p id = "whatisinf" > eMule is a <b>free</b> and <b>open-source</b> peer-to-peer file sharing client, allowing you to connect to millions 
+                    of users to download and share files with them. 
+                    <br>
+                    <br>
+                    By using the ED2K and Kademlia Network it supports semi-centralized 
+                    as well as decentralized searches and operations. All of it free and without any adware or advertising.  
+                    <br>
+                    <br>
+                    As of today, eMule is one of the biggest, <b>oldest</b> and <b>most reliable</b> file sharing clients around the world. Thanks to its open 
+                    source policy many developers are able to contribute to the project, making the network more efficient with each release.
+                </p> 
+            </div>
+
+            <div class = "bubble1 image">
+                <img src="images/placeholder.png" alt="imagen ejemplo de eMule">
+            </div>
+
+            <div class= "bubble1 features">
+                <h1 id = features> Features </h1>
+                <ul>
+                    <li id = "itsfree" >
+                        Completely <b>free and selfless</b>. 
+                    </li>
+                    <li id = "reliable">
+                        eMule uses several networks to create one reliable network. (<b>ED2K</b>, <b>Source Exchange</b>, <b>Kad</b>) 
+                    </li>
+                    <li id = "credit">
+                        A queue and credit system helps to ensure that everyone will get the file they want by promoting those that upload back to the network
+                    </li>
+                    <li id = "remote">
+                        <b>Remote control</b> eMule via its Web interface
+                    </li>
+                    <li id = "UI">
+                        A <b>sophisticated UI</b> aims to keep you informed about everything while keeping it as simple as possible
+                    </li>
+                    <li id = "stuff">
+                        On-thy-fly compression, error handling, corruption checking, obfuscation, NAT detection and much more: eMule's matured protocol 
+                        takes care of everything behind the scenes
+                    </li>
+                </ul>
+            </div>
+            <div class= "bubble1 help">
+                <h1 id = "help" > Do you need help? </h1>
+                <p id = "helpgiv" > Sometimes eMule can be a bit overwhelming for new users. But worry not! Our <b>community is here to help</b>. 
+                    Check out our <a class=i-Link href="https://forum.emule-project.net/" target="_blank" rel="noopener noreferrer">support pages</a> which explain all the its functions and try to answer the most questions. 
+                    <br>
+                    <br>
+                    If you can't find an answer there, you can visit our <b><a class=i-Link href="https://forum.emule-project.net/" target="_blank" rel="noopener noreferrer">forum</a></b> and ask your questions there. 
+                    <br>
+                    <br>
+                    Or you use eMule's build in IRC function to look for advice from other users.
+                    <br>
+                    <br>
+                    However, please don't forget that those are not paid support staff but just <b>users</b> like you who are willing to <b>help</b> in their free time.</p>
+            </div>
+                <a id=downloadtext href="https://sourceforge.net/projects/emule/files/eMule/0.50a/eMule0.50a-Installer.exe/download?use_mirror=altushost-net" target="_blank" rel="noopener noreferrer" class= downloadbutton >Download</a>
+          
+            <br>
+            <div class = bubble2>
+                <h1 id="P2Pahead">The P2P technology</h1>
+                <p id="P2Ptext1"> The P2P technology consists of <b>users that act both as client and server</b>. Essentially removing the need for a centralized point to get the desired archives from.
+                    You can choose to "seed" one or several files while or after you download them, which will share them for other users interested in dowloading them aswell. 
+                    The more people seed, the faster the downloads.  </p>
+                    <br>
+                    <img src="images/p2p.png" alt='illustration of p2p' class="img2">
+                    <br>
+                <p id="P2Ptext2">The fact <b>no centralized servers</b> are needed offers a <b>strong reliability</b>, since there isn't a single point from which the service depends, making it much more difficult if not
+                    impossible for the service to be entirely shut down.
+                </p>
+                                
+            </div>
+            
+            
+        </main>
+        
+
+        
+    <script src="scripts.js"></script>
+    </body>
+</html>
